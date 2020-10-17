@@ -16,7 +16,7 @@ class Home1Controller extends Controller
         // $articles=article::all();
         // return view('home',['articles'=>$articles]);
         $articles=Cache::remember('articles',15,function(){
-            return article::all();
+            return article::paginate(3);
         });
         return view('home1',['articles'=>$articles]);
     }
