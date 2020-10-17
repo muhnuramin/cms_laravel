@@ -38,7 +38,7 @@
           <a class="nav-link" href="/article">Article</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="/auth">Login</a>
+          <a class="nav-link btn btn-primary tombol" href="/login">Login</a>
           </li>
         </ul>
       </div>
@@ -53,9 +53,10 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="mt-4">Ini Halaman
+        <h1 class="mt-4">
           <small>@yield('judul')</small>
         </h1>
+        @yield('slide')
 
         <!-- Blog-post -->
         @yield('post')
@@ -68,7 +69,7 @@
 
         <!-- Search Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Search</h5>
+          <h5 class="card-header ">Search</h5>
           <div class="card-body">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search for...">
