@@ -30,3 +30,9 @@ Route::get('/', 'Home1Controller@home1');
 Auth::routes();
 
 Route::get('/auth', 'HomeController@home');
+Route::get('/manage', 'ArticleController@index')->name('manage');
+Route::get('/add','ArticleController@add');
+Route::post('/add/create','ArticleController@create');
+Route::get('/edit/{id}','ArticleController@edit');
+Route::post('/article/update/{id}','ArticleController@update');
+Route::get('/article/delete/{id}','ArticleController@delete');

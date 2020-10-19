@@ -11,10 +11,11 @@
   <title>@yield('title')</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/blog-home.css" rel="stylesheet">
+  <link href="{{ asset('css/blog-home.css') }}" rel="stylesheet">
+  
 
 </head>
 
@@ -38,7 +39,7 @@
           <a class="nav-link" href="/article">Article</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link btn btn-primary tombol" href="/login">Login</a>
+          <a class="nav-link btn btn-primary tombol" href="/auth">Login</a>
           </li>
         </ul>
       </div>

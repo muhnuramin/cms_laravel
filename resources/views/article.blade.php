@@ -2,7 +2,7 @@
 
 @section('title','Praktikum Web')
 
-@section('judul','Artikel')
+@section('judul','Manage')
 
 @section('post')
 <!-- Author -->
