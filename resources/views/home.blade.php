@@ -13,8 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <script>
+                    //You are logged in!
+                    document.location.href='/';
+                    </script>
                 </div>
             </div>
         </div>
