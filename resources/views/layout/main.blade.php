@@ -35,9 +35,6 @@
           <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="/article">Article</a>
-          </li>
           <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
           @guest

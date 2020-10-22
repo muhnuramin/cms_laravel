@@ -53,5 +53,10 @@ class ArticleController extends Controller
         $article->delete();
         return redirect('manage');
     }
+    public function show(Article $article)
+    {
+        return view('article',['article'=>$article]);
+        // passing variabel ['article'=>$article]
+    }
 }
 

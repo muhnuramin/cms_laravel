@@ -34,7 +34,7 @@
           <div class="card-body">
             <h2 class="card-title"><b>{{$ar->title}}</b></h2>
             <p class="card-text">{{$ar->content}}</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <a href="/article/{{$ar->id}}" class="btn btn-primary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
           {{$ar->created_at}}

@@ -1,24 +1,25 @@
 @extends('layout/main')
 
-@section('title','Praktikum Web')
+@section('title','Article')
 
-@section('judul','Manage')
+@section('judul')<h1>{{$article->title}}</h1>@endsection
 
 @section('post')
 <!-- Author -->
 <p class="lead">
           by
-          <a href="#">Start Bootstrap</a>
+          <a href="#">{{$article->author}}</a>
         </p>
 
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on January 1, 2019 at 12:00 PM</p>
+        <p>{{$article->updated_at}}</p>
 
         <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="https://miro.medium.com/max/808/1*L5z2Oq39ecGqiAqvaXBk3Q.jpeg" alt="">
+        
+        <img class="img-fluid rounded" src="{{$article->imageurl}}" alt="">
 
         <hr>
         <!-- Post Content -->

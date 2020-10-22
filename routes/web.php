@@ -25,6 +25,7 @@
 //Route::get('/', 'HomeController@home');
 Route::get('/about', 'AboutController@about');
 Route::get('/article', 'ArticleController@article');
+Route::get('/article/{article}', 'ArticleController@show');
 Route::get('/page', 'PageController@page');
 Route::get('/', 'Home1Controller@home1');
 Auth::routes();
