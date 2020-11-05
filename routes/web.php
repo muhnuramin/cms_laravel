@@ -32,8 +32,16 @@ Auth::routes();
 
 Route::get('/auth', 'HomeController@home');
 Route::get('/manage', 'ArticleController@index')->name('manage');
+Route::get('/manage/user', 'UserController@manageUser')->name('manageUser');
 Route::get('/add','ArticleController@add');
 Route::post('/add/create','ArticleController@create');
 Route::get('/edit/{id}','ArticleController@edit');
 Route::post('/article/update/{id}','ArticleController@update');
 Route::get('/article/delete/{id}','ArticleController@delete');
+
+Route::get('/manage/user', 'UserController@index')->name('manageUser');
+Route::get('/user/add','UserController@add');
+Route::post('/user/create','UserController@create');
+Route::get('/user/edit/{id}','UserController@edit');
+Route::post('/user/update/{id}','UserController@update');
+Route::get('/user/delete/{id}','UserController@delete');

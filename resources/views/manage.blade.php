@@ -1,10 +1,14 @@
 @extends('layout/main')
 
 @section('title','Praktikum Web')
-
-@section('judul','Manage')
+<div class="menuManage">
+<a href="/manage">Manage Artikel</a>
+<a href="/manage/user">Manage User</a>
+</div>
+@section('judul','Manage Artikel')
 
 @section('post')
+
 <div class="tambah mb-2">
     <a href="/add" class="btn btn-primary">Tambah Artikel</a>
 </div>
