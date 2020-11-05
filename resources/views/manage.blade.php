@@ -6,7 +6,7 @@
 
 @section('post')
 <div class="tambah mb-2">
-<a href="/add"class="btn btn-primary">Tambah Artikel</a>
+    <a href="/add" class="btn btn-primary">Tambah Artikel</a>
 </div>
 
 <table class="table table-bordered table-striped ">
@@ -25,7 +25,7 @@
             <td>{{$a->title}}</td>
             <td>{{$a->created_at}}</td>
             <td><a href="/edit/{{ $a->id }}" class="badge badge-warning">Edit</a>
-            <a href="article/delete/{{ $a->id }}" class="badge badge-danger">Delete</a>
+                <a href="article/delete/{{ $a->id }}" class="badge badge-danger">Delete</a>
             </td>
         </tr>
         @endforeach
