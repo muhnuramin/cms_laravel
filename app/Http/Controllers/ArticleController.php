@@ -4,9 +4,20 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\article;
+use Illuminate\Support\Facades\Gate;
+
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        //$this-middleware(auth);
+        $this->middleware(function($request, $next){
+            if(Gate::allows('manage-articles'))return $next($request);
+            abort(403, 'Anda tidak memiliki cukup hak akses');
+        });
+        //Login dengan akun user, ketika klik menu Kelola maka akan muncul peringatan 'Anda tidak memiliki cukup hak akses'.
+    }
     public function article()
     {
         return view('article');
@@ -14,8 +25,8 @@ class ArticleController extends Controller
 
     public function index()
     {
-       $articles=Article::all();
-       return view ('manage',['article'=>$articles]); 
+        $articles=Article::all();
+        return view ('manage',['article'=>$articles]); 
     }
     
     public function add()

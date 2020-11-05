@@ -3,40 +3,47 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-home/blob/master/LICENSE)
  */
- body {
-  padding-top: 56px;
+body {
+    padding-top: 56px;
 }
-img.ukuran{
-  height: 300px;
-  width: auto;
+
+img.ukuran {
+    height: 300px;
+    width: auto;
 }
-.card-header{
-  background-color: #2F4F4F;
-  color: white;
+
+.card-header {
+    background-color: #2F4F4F;
+    color: white;
 }
-.carousel-inner img{
-  height: 350px;
-  width: auto;
-  margin-bottom: 50px;
-  position: relative;
+
+.carousel-inner img {
+    height: 350px;
+    width: auto;
+    margin-bottom: 50px;
+    position: relative;
 }
-.carousel-inner img::after{
-  content:'';
-  display: block;
-  height: 100%;
-  width: auto;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
+
+.carousel-inner img::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: auto;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
-.nav-link{
-  margin-left: 20px;
+
+.nav-link {
+    margin-left: 20px;
 }
-.nav-link:hover{
-  border-bottom: 3px solid blue;
-  margin-top: -3px;
+
+.nav-link:hover {
+    border-bottom: 3px solid blue;
+    margin-top: -3px;
 }
-.tombol{
-  border-radius: 20px;
+
+.tombol {
+    border-radius: 20px;
 }
