@@ -29,8 +29,7 @@
             <td>{{$u->email}}</td>
             <td>{{$u->updated_at}}</td>
             <td><a href="/user/edit/{{$u->id}}" class="badge badge-warning">Edit</a>
-                <a href="/user/delete/{{$u->id}}" class="badge badge-danger">Delete</a>
-            </td>
+                <a href="/user/delete/{{$u->id}}" class="badge badge-danger">Delete</a></td>
         </tr>
         @endforeach
     </tbody>

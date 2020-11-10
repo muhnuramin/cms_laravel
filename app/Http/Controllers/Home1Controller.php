@@ -10,7 +10,10 @@ use App\article;
 
 class Home1Controller extends Controller
 {
-    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function home1()
     {
         // $articles=DB::table('articles')->get();

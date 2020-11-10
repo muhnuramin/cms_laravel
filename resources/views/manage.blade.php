@@ -2,8 +2,8 @@
 
 @section('title','Praktikum Web')
 <div class="menuManage">
-<a href="/manage">Manage Artikel</a>
-<a href="/manage/user">Manage User</a>
+    <a href="/manage">Manage Artikel</a>
+    <a href="/manage/user">Manage User</a>
 </div>
 @section('judul','Manage Artikel')
 
