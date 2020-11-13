@@ -5,7 +5,8 @@
 @section('judul','Manage')
 
 @section('post')
-<form action="/article/update/{{$article->id}}" method="post">
+<form action="/article/update/{{$article->id}}" method="post"
+enctype="multipart/form-data">
     {{csrf_field()}}
     <input type="hidden" name="id" value="{{$article->id}}"></br>
     <div class="form-group">
@@ -20,8 +21,9 @@
     </div>
     <div class="form-group">
         <label for="imageurl">Feature Image</label>
-        <input type="text" class="form-control" required="required" name="imageurl" placeholder="imageurl"
+        <input type="file" class="form-control" required="required" name="imageurl" placeholder="imageurl"
             value="{{$article->imageurl}}"><br>
+            <img width="150px"src="{{asset('storage/'.$article->imageurl)}}">
     </div>
     <div class="form-group">
         <label for="content">Content</label>

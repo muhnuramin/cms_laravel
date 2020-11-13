@@ -8,7 +8,7 @@ class PageController extends Controller
 {
     public function page()
     {
-        return view('');
+        return view('articles_pdf');
     }
     
 }

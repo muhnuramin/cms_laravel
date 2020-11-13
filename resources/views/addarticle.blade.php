@@ -5,7 +5,8 @@
 @section('judul','Manage')
 
 @section('post')
-<form action="/add/create" method="post">
+<form action="/add/create" method="post"
+enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label for="title">Judul</label>
@@ -18,7 +19,7 @@
     </div>
     <div class="form-group">
         <label for="imageurl">Feature Image</label>
-        <input type="text" class="form-control" required="required" name="imageurl" placeholder="imageurl"
+        <input type="file" class="form-control" required="required" name="imageurl" placeholder="imageurl"
             name="imageurl"><br>
     </div>
     <div class="form-group">

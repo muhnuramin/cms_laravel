@@ -35,6 +35,7 @@
 <!-- Blog Post -->
 @foreach($articles as $ar)
 <div class="card mb-4">
+
     <img class="card-img-top ukuran" src="{{$ar->imageurl}}" alt="Card image cap">
     <div class="card-body">
         <h2 class="card-title"><b>{{$ar->title}}</b></h2>

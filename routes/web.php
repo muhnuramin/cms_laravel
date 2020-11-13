@@ -14,7 +14,7 @@
 // Route::get('/', function () {
 //     return view('index');
 // });
-// Route::get('/about', function () {
+// Route::get('/article/cetak_pdf', function () {
 //     return 'Nama : Muhammad Nur Amin<br>
 //             NIM:1931710041';
 // });
@@ -39,9 +39,12 @@ Route::get('/edit/{id}','ArticleController@edit');
 Route::post('/article/update/{id}','ArticleController@update');
 Route::get('/article/delete/{id}','ArticleController@delete');
 
+
 Route::get('/manage/user', 'UserController@index')->name('manageUser');
 Route::get('/user/add','UserController@add');
 Route::post('/user/create','UserController@create');
 Route::get('/user/edit/{id}','UserController@edit');
 Route::post('/user/update/{id}','UserController@update');
 Route::get('/user/delete/{id}','UserController@delete');
+
+Route::get('/pages', 'ArticleController@cetak');

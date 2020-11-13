@@ -1,8 +1,10 @@
 @extends('layout/main')
 @section('title','Praktikum Web')
 <div class="menuManage">
-    <a href="/manage">Manage Artikel</a>
-    <a href="/manage/user">Manage User</a>
+    <tr>
+        <td><a href="/manage">Manage Artikel</a></td>
+        <td><a href="/manage/user">Manage User</a></td>
+    </tr>    
 </div>
 @section('judul','Manage User')
 @section('post')

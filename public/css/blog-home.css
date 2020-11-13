@@ -50,15 +50,21 @@ img.ukuran {
 
 .menuManage {
     background-color: rgb(31, 179, 31);
-    height: 30px;
-    width: 250px;
     position: fixed;
     z-index: 2;
+
 }
 
 .menuManage a {
     font-family: sans-serif;
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin: 10px;
+}
+
+a:hover {
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
 }
