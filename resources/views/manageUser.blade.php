@@ -17,6 +17,7 @@
     <thead class="thead-dark">
         <tr>
             <th>No</th>
+            <th>Profil</th>
             <th>Nama</th>
             <th>email</th>
             <th>Tanggal</th>
@@ -27,6 +28,7 @@
         @foreach ($User as $u)
         <tr>
             <td>{{$loop->iteration}}</td>
+            <td>{{$u->imageurl}}</td>
             <td>{{$u->name}}</td>
             <td>{{$u->email}}</td>
             <td>{{$u->updated_at}}</td>

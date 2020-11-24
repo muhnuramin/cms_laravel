@@ -10,22 +10,22 @@ enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label for="title">Judul</label>
-        <input type="text" class="form-control" required="required" name="title" placeholder="judul" name="title"><br>
+        <input type="text" class="form-control" required="required" name="title" placeholder="judul"><br>
     </div>
     <div class="form-group">
         <label for="author">Author</label>
         <input type="text" class="form-control" required="required" name="author" placeholder="author"
-            name="author"><br>
+        ><br>
     </div>
     <div class="form-group">
         <label for="imageurl">Feature Image</label>
-        <input type="file" class="form-control" required="required" name="imageurl" placeholder="imageurl"
-            name="imageurl"><br>
+        <input type="file" class="form-control" required="required" placeholder="imageurl"
+        name="imageurl"><br>
     </div>
     <div class="form-group">
         <label for="content">Content</label>
         <textarea class="form-control" cols="79" rows="30" required="required" name="content" placeholder="content"
-            name="content"></textarea>
+        ></textarea>
     </div>
 
     <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>

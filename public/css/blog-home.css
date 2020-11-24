@@ -62,9 +62,6 @@ img.ukuran {
     margin: 10px;
 }
 
-a:hover {
-    font-family: sans-serif;
+.menuManage a:hover {
     color: black;
-    text-decoration: none;
-    margin: 10px;
 }

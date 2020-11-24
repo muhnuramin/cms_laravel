@@ -19,7 +19,7 @@
     <center>
         <h5>Laporan Artikel <b>Pemrograman WEB Lanjut</b></h5>
     </center>
-    <table class='table table-bordered' align="center">
+    <table class='table table-bordered'>
         <thead>
             <tr>
                 <th>No</th>

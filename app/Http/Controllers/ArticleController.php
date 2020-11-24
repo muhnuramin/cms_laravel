@@ -9,6 +9,7 @@ use PDF;
 
 
 
+
 class ArticleController extends Controller
 {
     public function __construct()
@@ -38,16 +39,16 @@ class ArticleController extends Controller
     public function create(Request $request)
     {
         if($request->file('imageurl')){
-            $image_name=$request->file('imageurl')->store('images','public');
+            $image_name = $request->file('imageurl')->store('images','public');
         }
         Article::create([
-            'title'=>$request->title,
-            'author'=>$request->author,
-            'imageurl'=>$image_name,
-            'content'=>$request->content
-        ]);
-        return redirect('/manage');
-    }
+            'title' => $request->title,
+            'content' => $request->content,
+            'author'=> $request->author,
+            'imageurl' => $image_name,
+            ]);
+            return redirect('/manage')->with('status','Artikel Berhasil Ditambah');
+        }
 
     public function edit($id)
     {
@@ -60,7 +61,6 @@ class ArticleController extends Controller
         $article=Article::find($id);
         $article->title=$request->title;
         $article->author=$request->author;
-        // $article->imageurl=$request->imageurl;
         $article->content=$request->content;
         if($article->imageurl && file_exists(storage_path('app/public'.$article->imageurl)))
         {
@@ -69,14 +69,14 @@ class ArticleController extends Controller
         $image_name=$request->file('imageurl')->store('images','public');
         $article->imageurl=$image_name;
         $article->save();
-        return redirect('/manage');
+        return redirect('/manage')->with('status','Artikel Berhasil Diedit');
     }
 
     public function delete($id)
     {
         $article=Article::find($id);
         $article->delete();
-        return redirect('manage');
+        return redirect('manage')->with('status','Artikel Berhasil Dihapus');
     }
 
     public function show(Article $article)

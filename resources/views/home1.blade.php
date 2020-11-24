@@ -36,7 +36,7 @@
 @foreach($articles as $ar)
 <div class="card mb-4">
 
-    <img class="card-img-top ukuran" src="{{$ar->imageurl}}" alt="Card image cap">
+    <img class="card-img-top ukuran" src="{{asset('storage/'.$ar->imageurl) }}" alt="Card image cap">
     <div class="card-body">
         <h2 class="card-title"><b>{{$ar->title}}</b></h2>
         <p class="card-text">{{$ar->content}}</p>

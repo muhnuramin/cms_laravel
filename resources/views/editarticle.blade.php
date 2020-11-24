@@ -7,7 +7,7 @@
 @section('post')
 <form action="/article/update/{{$article->id}}" method="post"
 enctype="multipart/form-data">
-    {{csrf_field()}}
+    @csrf
     <input type="hidden" name="id" value="{{$article->id}}"></br>
     <div class="form-group">
         <label for="title">Judul</label>
@@ -22,8 +22,8 @@ enctype="multipart/form-data">
     <div class="form-group">
         <label for="imageurl">Feature Image</label>
         <input type="file" class="form-control" required="required" name="imageurl" placeholder="imageurl"
-            value="{{$article->imageurl}}"><br>
-            <img width="150px"src="{{asset('storage/'.$article->imageurl)}}">
+            value="{{$article->imageurl}}"></br>
+            <img width="150px" src="{{asset('storage/'.$article->imageurl) }}">
     </div>
     <div class="form-group">
         <label for="content">Content</label>
