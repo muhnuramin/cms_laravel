@@ -48,3 +48,4 @@ Route::post('/user/update/{id}','UserController@update');
 Route::get('/user/delete/{id}','UserController@delete');
 
 Route::get('/pages', 'ArticleController@cetak');
+Route::get('/printuser','UserController@cetak');

@@ -18,27 +18,24 @@
     <center>
         <h5>Laporan Artikel <b>Pemrograman WEB Lanjut</b></h5>
     </center>
-    <table class='table table-bordered'>
+    <table class='table table-bordered' border="solid 1px black">
         <thead>
             <tr>
                 <th>No</th>
-                <th>image</th>
-                <th>Judul</th>
                 <th>Author</th>
-                <th>Tanggal Dibuat</th>
-                <th>Terakhir Diupdate</th>
+                <th>Profil</th>
+                <th>email</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($article as $a)
+            @foreach($user as $u)
             <tr>
                 
                 <td>{{$loop->iteration}}</td>
-                <td><img width="150px" width="150px"src="{{asset('storage/'.$a->imageurl) }}"></td>
-                <td>{{$a->title}}</td>
-                <td>{{$a->author}}</td>
-                <td>{{$a->created_at}}</td>
-                <td>{{$a->updated_at}}</td>
+                <td><img width="150px" height="150px" src="{{asset('storage/'.$u->image) }}"></td>
+                <td>{{$u->name}}</td>
+                <td>{{$u->image}}</td>
+                <td>{{$u->email}}</td>
             </tr>
             @endforeach
         </tbody>

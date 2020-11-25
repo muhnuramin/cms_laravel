@@ -21,7 +21,7 @@
     <div class="alert alert-success">
         {{session('status')}}
     </div>
-@endif
+    @endif
 <table class="table table-bordered table-striped ">
     <thead class="thead-dark">
         <tr>

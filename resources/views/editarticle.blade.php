@@ -19,12 +19,14 @@ enctype="multipart/form-data">
         <input type="text" class="form-control" required="required" name="author" placeholder="author"
             value="{{$article->author}}"><br>
     </div>
+
     <div class="form-group">
         <label for="imageurl">Feature Image</label>
         <input type="file" class="form-control" required="required" name="imageurl" placeholder="imageurl"
             value="{{$article->imageurl}}"></br>
             <img width="150px" src="{{asset('storage/'.$article->imageurl) }}">
     </div>
+    
     <div class="form-group">
         <label for="content">Content</label>
         <textarea class="form-control" cols="79" rows="30" required="required" name="content" placeholder="content"

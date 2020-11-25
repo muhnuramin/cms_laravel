@@ -10,6 +10,7 @@
     <div class="card-body">
         <h2 class="card-title">About :</h2>
         <p class="card-text"><b>Nama </b>: Muhammad Nur Amin<br><b>NIM</b> : 1931710041</p>
+        <br>
     </div>
     <div class="card-footer text-muted">
         Posted on January 1, 2020 by
