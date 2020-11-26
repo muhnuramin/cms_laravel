@@ -28,8 +28,8 @@ enctype="multipart/form-data">
     <div class="form-group">
         <label for="roles">Roles</label>
         <select id="roles" name="roles" class="form-control">
-            <option value="{{$user->roles}}">User</option>
-            <option value="{{$user->roles}}">Administrator</option>
+            <option value="User">User</option>
+            <option value="Administrator">Administrator</option>
         </select>
     </div>
 
